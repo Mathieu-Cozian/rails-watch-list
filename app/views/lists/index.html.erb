@@ -1,0 +1,13 @@
+
+<div class="container">
+    <h1>Your lists </h1>
+    <div class="card-category">
+    <% @lists.each do |list| %>
+    <div class="card-category"style="background-color: red" >
+    <%= link_to list.name, list_path(list.id), class:"linkto" %>
+    </div>
+    <% end   %>
+  </div>
+    </ul>
+    <%= link_to "New List", new_list_path %>
+</div>
